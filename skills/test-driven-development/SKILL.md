@@ -26,6 +26,12 @@ Write the test first. Watch it fail. Write minimal code to pass.
 - Generated code
 - Configuration files
 
+**Do NOT use TDD for non-production edits:**
+- Quick one-off scripts (`python`, `sh`, local helper scripts) that are not maintained production behavior
+- Parameter, configuration, or prompt-only updates that do not change executable production behavior
+
+If a script becomes maintained tooling, release logic, user-facing behavior, or fixes a real production bug, use TDD. If unclear, ask your human partner before writing tests.
+
 Thinking "skip TDD just this once"? Stop. That's rationalization.
 
 ## The Iron Law
